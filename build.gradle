@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.13.2'
+    implementation 'com.microsoft.azure:msal4j:1.19.1'
+}
+
+application {
+    mainClass = 'com.summerlauncher.Main'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
